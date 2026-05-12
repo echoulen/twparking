@@ -1,0 +1,96 @@
+[
+  {
+    "ID": 17,
+    "Name": "臺中國際會展中心",
+    "EnName": "Taichung Convention & Exhibition Center",
+    "X": 120.65126,
+    "Y": 24.1936588,
+    "ParkingLots": [
+      {
+        "ID": "1204",
+        "Position": "西屯區-交通局-中央公園北側P",
+        "EnPosition": "西屯區-交通局-中央公園北側P",
+        "X": 120.6499,
+        "Y": 24.1966763,
+        "TotalCar": 401,
+        "AvailableCar": 371,
+        "AvailableCarRGB": "B",
+        "TotalMotor": 0,
+        "AvailableMotor": -1,
+        "AvailableMotorRGB": "G",
+        "ShowVauleCar": 0,
+        "ShowVauleMotor": 0,
+        "Notes": " 汽車:10元/半小時,月票:1,200元/月。",
+        "EnNotes": " 汽車:10元/半小時,月票:1,200元/月。",
+        "Type": " ",
+        "Updatetime": "2026-05-13 02:06:38"
+      },
+      {
+        "ID": "3098",
+        "Position": "西屯區-經發局-臺中國際會展中心地下P",
+        "EnPosition": "西屯區-經發局-臺中國際會展中心地下P",
+        "X": 120.651672,
+        "Y": 24.19373,
+        "TotalCar": 699,
+        "AvailableCar": 687,
+        "AvailableCarRGB": "B",
+        "TotalMotor": 712,
+        "AvailableMotor": 699,
+        "AvailableMotorRGB": "B",
+        "ShowVauleCar": 0,
+        "ShowVauleMotor": 0,
+        "Notes": " 展覽期間：汽車20元/半小時，機車30元/次。非展覽期間：汽車15元/半小時，機車20元/次。月租：汽車3000元、機車500元。『符合身心障礙者使用之車輛停車優惠』",
+        "EnNotes": " 展覽期間：汽車20元/半小時，機車30元/次。非展覽期間：汽車15元/半小時，機車20元/次。月租：汽車3000元、機車500元。『符合身心障礙者使用之車輛停車優惠』",
+        "Type": " ",
+        "Updatetime": "2026-05-13 02:06:38"
+      }
+    ]
+  },
+  {
+    "ID": 13,
+    "Name": "臺中車站(含Lalaport)",
+    "EnName": "Taichung Station",
+    "X": 120.6871,
+    "Y": 24.1378651,
+    "ParkingLots": [
+      {
+        "ID": "1404",
+        "Position": "東區-交通局-大智北機車P",
+        "EnPosition": "東區-交通局-大智北機車P",
+        "X": 120.687889,
+        "Y": 24.1365948,
+        "TotalCar": 0,
+        "AvailableCar": -1,
+        "AvailableCarRGB": "G",
+        "TotalMotor": 93,
+        "AvailableMotor": 103,
+        "AvailableMotorRGB": "B",
+        "ShowVauleCar": 0,
+        "ShowVauleMotor": 0,
+        "Notes": " 機車臨停：10元/小時，每日每次收費上限金額為30元。機車月票：不販售。",
+        "EnNotes": " 機車臨停：10元/小時，每日每次收費上限金額為30元。機車月票：不販售。",
+        "Type": "1,2,3",
+        "Updatetime": "2026-05-13 02:06:38"
+      },
+      {
+        "ID": "1755",
+        "Position": "東區-民營-Lalaport(北館)P",
+        "EnPosition": "東區-民營-Lalaport(北館)P",
+        "X": 120.690887,
+        "Y": 24.1356239,
+        "TotalCar": 1391,
+        "AvailableCar": 1387,
+        "AvailableCarRGB": "B",
+        "TotalMotor": 2910,
+        "AvailableMotor": 0,
+        "AvailableMotorRGB": "R",
+        "ShowVauleCar": 0,
+        "ShowVauleMotor": 0,
+        "Notes": " 【08:00-23:59】汽車50元/時，機車10元/時\r\n【00:00-07:59】汽車100元/時，機車50元/時",
+        "EnNotes": " 【08:00-23:59】汽車50元/時，機車10元/時\r\n【00:00-07:59】汽車100元/時，機車50元/時",
+        "Type": "1,2",
+        "Updatetime": "2026-05-13 02:06:38"
+      }
+    ]
+  }
+]
