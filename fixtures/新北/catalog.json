@@ -1,0 +1,5 @@
+[
+  {"ID":"010056","AREA":"板橋區","NAME":"遠東百貨停車場","TYPE":"2","SUMMARY":"立體式建築附設停車空間","ADDRESS":"板橋區中山路一段152號","TEL":"02-23816155","PAYEX":"小型車計時60元;","SERVICETIME":"0~24時","TW97X":"296882","TW97Y":"2767068","TOTALCAR":"453","TOTALMOTOR":"0","TOTALBIKE":""},
+  {"ID":"060040","AREA":"新店區","NAME":"崇光女子高中地下停車場","TYPE":"2","SUMMARY":"立體式-機械建築附設停車空間","ADDRESS":"新北市新店區三民路19號B2","TEL":"02-29112543","PAYEX":"小型車月租3000元;","SERVICETIME":"0~24時","TW97X":"304461.5","TW97Y":"2762748.5","TOTALCAR":"60","TOTALMOTOR":"0","TOTALBIKE":""},
+  {"ID":"010001","AREA":"板橋區","NAME":"板橋火車站地下停車場","TYPE":"1","SUMMARY":"地下式公有停車場","ADDRESS":"新北市板橋區縣民大道二段7號","TEL":"02-29603456","PAYEX":"小型車計時30元;","SERVICETIME":"0~24時","TW97X":"297400","TW97Y":"2767200","TOTALCAR":"412","TOTALMOTOR":"0","TOTALBIKE":""}
+]
