@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renderScreen > snapshot: mixed normal + low + error rows 1`] = `
+"twparking · 2026-05-13 21:43:11 · refresh every 60s · Ctrl+C to stop
+
+城市  停車場        剩餘 / 總數  更新時間  狀態                  
+台北  信義公務中心  12 / 250     21:42:38                        
+台北  101 購物中心  3 / 1843     21:42:40  ⚠ 將滿               
+桃園  中路停車場    ─            ─         ✗ fetch error: timeout
+"
+`;
