@@ -1,0 +1,49 @@
+{
+  "data": {
+    "UPDATETIME": "Wed May 13 01:54:00 CST 2026",
+    "park": [
+      {
+        "id": "TPE0001",
+        "area": "中正區",
+        "name": "建國假日花市地下停車場",
+        "type": "1",
+        "summary": "小型車格",
+        "address": "台北市中正區信義路一段1號",
+        "tw97x": "302730.752",
+        "tw97y": "2770139.53",
+        "totalcar": 200,
+        "totalmotor": 0,
+        "totalbike": 0,
+        "totalbus": 0
+      },
+      {
+        "id": "TPE0002",
+        "area": "信義區",
+        "name": "信義公務中心停車場",
+        "type": "1",
+        "summary": "小型車格",
+        "address": "台北市信義區市府路1號",
+        "tw97x": "305730.752",
+        "tw97y": "2768139.53",
+        "totalcar": 500,
+        "totalmotor": 0,
+        "totalbike": 0,
+        "totalbus": 0
+      },
+      {
+        "id": "TPE0003",
+        "area": "信義區",
+        "name": "台北101購物中心",
+        "type": "1",
+        "summary": "大型停車場",
+        "address": "台北市信義區市府路45號",
+        "tw97x": "305830.752",
+        "tw97y": "2768039.53",
+        "totalcar": 1843,
+        "totalmotor": 0,
+        "totalbike": 0,
+        "totalbus": 0
+      }
+    ]
+  }
+}
