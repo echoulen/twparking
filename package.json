@@ -1,0 +1,50 @@
+{
+  "name": "twparking",
+  "version": "0.1.0",
+  "description": "CLI 查台北/新北/基隆/桃園/台中 即時停車格剩餘量",
+  "type": "module",
+  "bin": {
+    "twparking": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "dependencies": {
+    "cac": "^6.7.14",
+    "kleur": "^4.1.5",
+    "string-width": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0",
+    "vitest": "^1.6.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/echoulen/twparking.git"
+  },
+  "keywords": [
+    "cli",
+    "parking",
+    "taiwan",
+    "open-data"
+  ]
+}
