@@ -7,6 +7,5 @@
   },
   "license": "MIT",
   "homepage": "https://github.com/echoulen/twparking",
-  "commands": "./commands/",
   "skills": "./skills/"
 }
