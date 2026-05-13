@@ -14,13 +14,14 @@
   "engines": {
     "node": ">=20"
   },
+  "packageManager": "pnpm@10.33.2",
   "scripts": {
     "dev": "tsx src/cli.ts",
     "build": "tsc -p tsconfig.build.json && chmod +x dist/cli.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "smoke": "tsx scripts/smoke.ts"
+    "prepublishOnly": "pnpm typecheck && pnpm test && pnpm build"
   },
   "dependencies": {
     "cac": "^6.7.14",
@@ -40,6 +41,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/echoulen/twparking.git"
+  },
+  "homepage": "https://github.com/echoulen/twparking#readme",
+  "bugs": {
+    "url": "https://github.com/echoulen/twparking/issues"
   },
   "keywords": [
     "cli",
