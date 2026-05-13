@@ -83,6 +83,30 @@ pnpm build                   # dist/cli.js
 node dist/cli.js --help
 ```
 
+## Use as a Claude Code plugin
+
+本 repo 同時是一個 Claude Code marketplace、可直接安裝：
+
+```
+/plugin marketplace add echoulen/twparking
+/plugin install twparking@echoulen-twparking
+```
+
+裝完之後可用 slash commands：
+
+- `/parking-search <關鍵字> [--city <城市>]` — 模糊搜尋
+- `/parking-status <城市>:<id> [...]` — 一次性查剩餘量
+- `/parking-add <城市>:<名稱或 id>` — 加進 favourites
+- `/parking-list` — 列 favourites
+
+或直接用自然語言問 Claude，它會透過 skill 自動呼叫 CLI。
+
+底層仍依賴本 npm 套件、首次呼叫會自動 `npx -y twparking@latest`，要長期使用建議：
+
+```
+npm i -g twparking
+```
+
 ## License
 
 MIT
