@@ -1,15 +1,5 @@
-import { describe, it, expect, beforeAll, afterAll } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { renderScreen } from './watchScreen.js';
-
-let originalTZ: string | undefined;
-beforeAll(() => {
-  originalTZ = process.env.TZ;
-  process.env.TZ = 'Asia/Taipei';
-});
-afterAll(() => {
-  if (originalTZ === undefined) delete process.env.TZ;
-  else process.env.TZ = originalTZ;
-});
 
 const fixedNow = new Date('2026-05-13T21:43:11+08:00');
 const fixedUpdate1 = new Date('2026-05-13T21:42:38+08:00');
