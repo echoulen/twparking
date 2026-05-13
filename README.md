@@ -104,7 +104,7 @@ node dist/cli.js --help
 底層仍依賴本 npm 套件、首次呼叫會自動 `npx -y twparking@latest`，要長期使用建議：
 
 ```
-npm i -g twparking
+pnpm add -g twparking
 ```
 
 ## License

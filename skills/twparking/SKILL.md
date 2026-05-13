@@ -13,7 +13,7 @@ CLI tool for Taiwan real-time parking data across 5 cities.
 - 模糊搜尋停車場名稱
 
 ## Install
-`npm i -g twparking` 或直接 `npx -y twparking@latest ...`
+`pnpm add -g twparking` 或直接 `npx -y twparking@latest ...`
 
 ## Subcommands cheat sheet
 | Command | 用途 | Agent flag |
@@ -40,4 +40,6 @@ CLI tool for Taiwan real-time parking data across 5 cities.
 - `now` 跟 `search` 都支援 `--json`、agent 一律帶 flag、之後再渲染給人看
 
 ## Slash commands
-本 plugin 提供 `/parking-search`, `/parking-status`, `/parking-add`, `/parking-list` 對應 `search/now/add/list`。如果使用者沒明確下指令、可自行決定要不要呼叫 CLI。
+本 plugin 提供 `/parking-search`, `/parking-status`, `/parking-add`, `/parking-list` 對應 `search/now/add/list`。
+
+使用者用自然語言問空位 / 找停車場時、應**主動**跑 `npx -y twparking@latest now/search ... --json`、把結果整理回中文表格給他，不要等使用者下 slash command。
