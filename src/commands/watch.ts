@@ -1,7 +1,6 @@
-import { CITY_ADAPTERS } from '../adapters/index.js';
-import { readCatalog } from '../storage/catalogCache.js';
+import { fetchTickViews } from './fetchTickViews.js';
 import { readFavourites } from '../storage/favourites.js';
-import type { Availability, City, LotView, ParkingLot } from '../adapters/types.js';
+import type { City } from '../adapters/types.js';
 import { CURSOR_HOME_CLEAR, renderScreen } from '../render/watchScreen.js';
 
 export interface WatchOptions {
@@ -16,19 +15,6 @@ export async function runWatch(opts: WatchOptions): Promise<number> {
     return 1;
   }
 
-  const groups = new Map<City, string[]>();
-  for (const r of refs) {
-    const arr = groups.get(r.city) ?? [];
-    arr.push(r.id);
-    groups.set(r.city, arr);
-  }
-
-  const catalogByCity = new Map<City, ParkingLot[]>();
-  for (const city of groups.keys()) {
-    const c = await readCatalog(city);
-    if (c) catalogByCity.set(city, c.lots);
-  }
-
   const failCount = new Map<City, number>();
   let stopped = false;
   const onSig = () => {
@@ -38,35 +24,15 @@ export async function runWatch(opts: WatchOptions): Promise<number> {
 
   while (!stopped) {
     const tickStart = Date.now();
-    const tickResults = await Promise.all(
-      Array.from(groups.entries()).map(async ([city, ids]) => {
-        try {
-          const av = await CITY_ADAPTERS[city].fetchAvailability(ids);
-          failCount.set(city, 0);
-          return { city, ids, av, err: null as string | null };
-        } catch (err) {
-          failCount.set(city, (failCount.get(city) ?? 0) + 1);
-          return { city, ids, av: [] as Availability[], err: (err as Error).message };
-        }
-      }),
-    );
+    const { views, cityFetchErrors } = await fetchTickViews(refs);
 
-    const tickViews: LotView[] = [];
-    for (const { city, ids, av, err } of tickResults) {
-      const catalog = catalogByCity.get(city) ?? [];
-      for (const id of ids) {
-        const lot = catalog.find((l) => l.id === id);
-        const a = av.find((x) => x.id === id);
-        const view: LotView = {
-          city,
-          id,
-          name: lot?.name ?? `(unknown ${id})`,
-        };
-        if (lot?.totalSpaces !== undefined) view.totalSpaces = lot.totalSpaces;
-        if (a) view.availability = a;
-        if (err) view.fetchError = err;
-        else if (av.length > 0 && !a) view.fetchError = 'lot not in availability response';
-        tickViews.push(view);
+    const seenCities = new Set<City>();
+    for (const v of views) seenCities.add(v.city);
+    for (const city of seenCities) {
+      if (cityFetchErrors.has(city)) {
+        failCount.set(city, (failCount.get(city) ?? 0) + 1);
+      } else {
+        failCount.set(city, 0);
       }
     }
 
@@ -79,7 +45,7 @@ export async function runWatch(opts: WatchOptions): Promise<number> {
       renderScreen({
         now: new Date(),
         intervalSec: opts.intervalSec,
-        views: tickViews,
+        views,
         width: process.stdout.columns ?? 100,
         persistentFailures,
       });
