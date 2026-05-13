@@ -1,0 +1,14 @@
+{
+  "name": "echoulen-twparking",
+  "owner": {
+    "name": "echoulen",
+    "url": "https://github.com/echoulen"
+  },
+  "plugins": [
+    {
+      "name": "twparking",
+      "source": ".",
+      "description": "查台灣即時停車格剩餘量"
+    }
+  ]
+}
