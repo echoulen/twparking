@@ -28,7 +28,7 @@ function renderHeader(now: Date, sec: number, failures: string[]): string {
   return `twparking · ${ts} · refresh every ${sec}s · Ctrl+C to stop${fail}`;
 }
 
-function renderTable(views: LotView[], termWidth: number): string {
+export function renderTable(views: LotView[], termWidth: number): string {
   const rows: string[][] = views.map(rowOf);
   const allRows: string[][] = [Array.from(COLS), ...rows];
   const widths = COLS.map((_, i) =>
