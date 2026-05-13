@@ -8,6 +8,7 @@ import { runSearch } from './commands/search.js';
 import { runAdd, runList, runRemove } from './commands/favourites.js';
 import { runRefresh } from './commands/refresh.js';
 import { runWatch } from './commands/watch.js';
+import { runNow } from './commands/now.js';
 
 const cli = cac('twparking');
 
@@ -46,6 +47,14 @@ cli
   .action(async (opts: { city?: string }) => {
     const city = assertCityOrUndefined(opts.city);
     process.exitCode = await runRefresh(city);
+  });
+
+cli
+  .command('now <ref> [...refs]', 'one-shot fetch availability for given lots')
+  .option('--json', 'JSON output')
+  .action(async (ref: string, refs: string[], opts: { json?: boolean }) => {
+    const all = [ref, ...refs].map(parseRefOrExit);
+    process.exitCode = await runNow(all, { json: !!opts.json });
   });
 
 cli
