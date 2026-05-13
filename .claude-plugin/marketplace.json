@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "twparking",
-      "source": ".",
+      "source": "./",
       "description": "查台灣即時停車格剩餘量"
     }
   ]
