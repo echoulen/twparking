@@ -6,5 +6,7 @@
     "name": "echoulen"
   },
   "license": "MIT",
-  "homepage": "https://github.com/echoulen/twparking"
+  "homepage": "https://github.com/echoulen/twparking",
+  "commands": "./commands/",
+  "skills": "./skills/"
 }
