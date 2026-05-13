@@ -1,6 +1,6 @@
 ---
-description: 跨台北/新北/基隆/桃園/台中模糊搜尋停車場
-argument-hint: <關鍵字> [--city 台北|新北|基隆|桃園|台中]
+description: "跨台北/新北/基隆/桃園/台中模糊搜尋停車場"
+argument-hint: "<關鍵字> [--city 台北|新北|基隆|桃園|台中]"
 allowed-tools: Bash
 ---
 

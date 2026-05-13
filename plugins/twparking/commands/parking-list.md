@@ -1,5 +1,5 @@
 ---
-description: 列出 favourites
+description: "列出 favourites"
 allowed-tools: Bash
 ---
 

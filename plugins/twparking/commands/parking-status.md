@@ -1,6 +1,6 @@
 ---
-description: 查一或多個停車場的即時剩餘量（一次性）
-argument-hint: <city>:<id> [<city>:<id> ...]
+description: "查一或多個停車場的即時剩餘量（一次性）"
+argument-hint: "<city>:<id> [<city>:<id> ...]"
 allowed-tools: Bash
 ---
 

@@ -1,6 +1,6 @@
 ---
 name: twparking
-description: 查台北/新北/基隆/桃園/台中即時停車格剩餘量。Use when user asks about Taiwan parking lot availability, looks for a specific lot, or wants to monitor favourites.
+description: "查台北/新北/基隆/桃園/台中即時停車格剩餘量。Use when user asks about Taiwan parking lot availability, looks for a specific lot, or wants to monitor favourites."
 ---
 
 # twparking

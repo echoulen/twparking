@@ -1,6 +1,6 @@
 ---
-description: 把停車場加進 favourites
-argument-hint: <city>:<名稱或 id>
+description: "把停車場加進 favourites"
+argument-hint: "<city>:<名稱或 id>"
 allowed-tools: Bash
 ---
 
