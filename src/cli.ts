@@ -1,6 +1,9 @@
 #!/usr/bin/env node
+import { createRequire } from 'node:module';
 import { cac } from 'cac';
 import { CITIES, type City } from './adapters/types.js';
+
+const pkg = createRequire(import.meta.url)('../package.json') as { version: string };
 import { runSearch } from './commands/search.js';
 import { runAdd, runList, runRemove } from './commands/favourites.js';
 import { runRefresh } from './commands/refresh.js';
@@ -62,7 +65,7 @@ cli
   });
 
 cli.help();
-cli.version('0.1.0');
+cli.version(pkg.version);
 cli.parse();
 
 function assertCityOrUndefined(c: unknown): City | undefined {
