@@ -1,6 +1,6 @@
 {
   "name": "twparking",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CLI 查台北/新北/基隆/桃園/台中 即時停車格剩餘量",
   "type": "module",
   "bin": {
