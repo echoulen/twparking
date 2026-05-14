@@ -23,7 +23,7 @@ npm i -g twparking
 
 ```
 /plugin marketplace add echoulen/twparking
-/plugin install twparking@echoulen-twparking
+/plugin install twparking@twparking
 ```
 
 裝完即可用 slash commands：
