@@ -1,4 +1,6 @@
-# twparking
+<p align="left">
+  <img src="docs/logo-readme.svg" alt="twparking" width="440">
+</p>
 
 CLI 查台北 / 新北 / 基隆 / 桃園 / 台中 五個城市的即時停車格剩餘量。
 
@@ -105,6 +107,21 @@ node dist/cli.js --help
 
 ```
 pnpm add -g twparking
+```
+
+## Branding
+
+| 檔案 | 用途 |
+|---|---|
+| `docs/icon.svg` | 512×512 方形 logo（npm 套件頁、app 圖示） |
+| `docs/social-preview.svg` | 1280×640 GitHub social preview，上傳到 repo Settings → Social preview |
+| `docs/logo-readme.svg` | README 頂部的橫式 banner（即上方那張） |
+
+需要 PNG 衍生檔可以用 `rsvg-convert` 或 `inkscape` 導出：
+
+```sh
+rsvg-convert -w 512 docs/icon.svg -o icon-512.png
+rsvg-convert -w 1280 docs/social-preview.svg -o social-preview.png
 ```
 
 ## License

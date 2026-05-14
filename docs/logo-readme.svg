@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-label="twparking">
+  <title>twparking</title>
+
+  <g transform="translate(20 20) scale(0.273)">
+    <rect width="512" height="512" rx="96" fill="#020617"/>
+    <rect x="32" y="32" width="448" height="448" rx="32" fill="#0F172A"/>
+    <circle cx="72" cy="80" r="12" fill="#FF5F57"/>
+    <circle cx="112" cy="80" r="12" fill="#FEBC2E"/>
+    <circle cx="152" cy="80" r="12" fill="#28C840"/>
+    <line x1="32" y1="128" x2="480" y2="128" stroke="#1E293B" stroke-width="2"/>
+    <path d="M 137 232 L 205 304 L 137 376"
+          fill="none" stroke="#22D3A0" stroke-width="32"
+          stroke-linecap="round" stroke-linejoin="round"/>
+    <path transform="translate(251 184)"
+          fill="#22D3A0" fill-rule="evenodd"
+          d="M 0 0 L 70 0 A 70 70 0 0 1 70 140 L 70 240 L 0 240 Z
+             M 70 40 A 30 30 0 0 1 70 100 Z"/>
+  </g>
+
+  <text x="180" y="124"
+        font-family="ui-monospace, SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace"
+        font-weight="700" font-size="84" fill="#0F172A" letter-spacing="-2">twparking</text>
+</svg>
